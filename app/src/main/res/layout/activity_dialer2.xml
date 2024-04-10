@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_drawable"
+    android:theme="@style/Theme.AppCompat.NoActionBar"
+    tools:context=".DialerActivity">
+
+
+    <Button
+        android:id="@+id/btnColgar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        android:text=""
+        app:backgroundTint="@color/red"
+        app:icon="@drawable/call_stop"
+        app:iconGravity="start"
+        app:iconPadding="0dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/round_button"
+        android:gravity="center_vertical|center_horizontal"
+        app:backgroundTint="@color/green"
+        app:icon="@drawable/call"
+        android:text=""
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:iconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/call"
+        tools:src="@drawable/call" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Aceptar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnAceptar"
+        app:layout_constraintStart_toStartOf="@+id/btnAceptar"
+        app:layout_constraintTop_toBottomOf="@+id/btnAceptar" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Colgar"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnColgar"
+        app:layout_constraintStart_toStartOf="@+id/btnColgar"
+        app:layout_constraintTop_toBottomOf="@+id/btnColgar" />
+
+    <TextView
+        android:id="@+id/tvCaller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:text="..."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
